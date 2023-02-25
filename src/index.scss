@@ -1,0 +1,24 @@
+@import '../src/components/sass/abstract/function';
+@import '../src/components/sass/abstract/mixins';
+@import '../src/components/sass/abstract/variables';
+
+@import '../src/components/sass/base/base';
+@import '../src/components/sass/base/animation';
+@import '../src/components/sass/base/typography';
+@import '../src/components/sass/base/utilities';
+
+@import '../src/components/sass/components/container-lottie';
+@import '../src/components/sass/components/bg-video';
+@import '../src/components/sass/components/button';
+@import '../src/components/sass/components/composition';
+@import '../src/components/sass/components/feature-box';
+@import '../src/components/sass/components/card';
+@import '../src/components/sass/components/stories';
+@import '../src/components/sass/components/form';
+
+
+@import '../src/components/sass/layouts/header';
+@import '../src/components/sass/layouts/footer';
+@import '../src/components/sass/layouts/grid';
+
+@import '../src/components/sass/pages/home';

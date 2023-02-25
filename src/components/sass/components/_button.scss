@@ -1,0 +1,103 @@
+// btn btn-white
+.btn{
+    &,
+    &:link,
+    &:visited{
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 10rem;
+      transition:  all 0.6s;
+      position: relative;
+      cursor: pointer;
+
+      //for button
+      border: none;
+    }
+    &:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.5);
+      &::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    &:active,
+    &:focus{
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 10rem rgba($color: #000000, $alpha: 0.3);
+    }
+  
+    }
+    &--white{
+      background-color: #fff;
+      color: $color-medium-black;
+      padding:10px 20px;
+      display: inline-block;
+      font-size: $default-font-size;
+      margin-top: 4.5rem;
+      &::after{
+        content:"";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background-color: #fff;
+      }
+    }
+
+
+    &--green{
+      background-color: $color-Light-brown;
+      color: $color-white-d;
+      padding:10px 20px;
+      display: inline-block;
+      font-size: $default-font-size;
+      margin-top: 4.5rem;
+      &::after{
+        content:"";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background-color: $color-Light-brown;
+      }
+    }
+   
+    &--animated{
+      animation: moveBt .5s ease-out .75s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  .btn-text{
+    &:link,
+    &:visited{
+      font-size: $default-font-size;
+      color:$color-Medium-brown;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid $color-Medium-brown;
+      padding: 3px;
+      transition: all .2s;
+    }
+    &:hover{
+      background-color: $color-Medium-brown;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color: $color-medium-black, $alpha: 1);
+      transform: translateY(-2px);
+    }
+    &:active{
+      box-shadow: 0 1rem 2rem rgba($color: $color-medium-black, $alpha: .7);
+      transform: translateY(0);
+    }
+  }
